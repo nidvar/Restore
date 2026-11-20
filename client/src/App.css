@@ -1,12 +1,14 @@
 .app-page {
     display: flex;
     flex-direction: column;
+    background-color: var(--page-bg-color);
 }
 
 .app-heading {
     text-align: center;
     padding: 20px;
     font-size: 42px;
+    color: var(--color);
 }
 
 @media (min-width: 1080px) {

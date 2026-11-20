@@ -5,6 +5,7 @@
     padding: 10px;
     height: 60px;
     background-color: var(--navbar-bg);
+    color: white;
 }
 
 .inner-navbar {
@@ -22,9 +23,10 @@
     gap: 10px;
 }
 
-.toggle-theme-container{
-    min-width: 100px;
+.toggle-theme-container {
     cursor: pointer;
+    display: flex;
+    padding: 10px;
 }
 
 .navbar img {
