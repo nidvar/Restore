@@ -54,3 +54,19 @@
 .cursor-pointer {
   cursor: pointer;
 }
+
+/* THEMES */
+
+:root[data-theme="light"] {
+  --navbar-bg: #0d6efd;
+  --color: black;
+  --product-card-bg: white;
+  --page-bg-color: white;
+}
+
+:root[data-theme="dark"] {
+  --navbar-bg: #121212;
+  --color: white;
+  --product-card-bg: #312f2f;
+  --page-bg-color: rgb(82, 76, 76);
+}

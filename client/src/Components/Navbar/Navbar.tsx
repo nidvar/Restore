@@ -2,16 +2,14 @@ import { useState } from 'react';
 import './Navbar.css';
 import { Moon, Sun } from 'lucide-react';
 
-type navbarPropsType = {
-  toggleTheme: ()=> void;
-}
-
-function Navbar({toggleTheme}: navbarPropsType) {
-
+function Navbar() {
   const [theme, setTheme] = useState<string>('');
-
+  
   const toggle = ()=>{
-    toggleTheme();
+    const theme = document.documentElement.getAttribute('data-theme');
+    const next = theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
     if(document.documentElement.getAttribute('data-theme') === 'light'){
       setTheme('dark');
     }else{

@@ -1,10 +1,13 @@
 import ProductsList from "./Components/Product/ProductsList";
 import './App.css';
+import Navbar from "./Components/Navbar/Navbar";
+
+document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || "light");
 
 function App() {
   return (
     <div className="app-page">
-     <h1 className="app-heading">ASP.NET Core</h1>
+     <Navbar />
      <ProductsList />
     </div>
   )

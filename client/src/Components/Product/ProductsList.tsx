@@ -3,7 +3,7 @@ import type {productItemType} from "./Product.type";
 import ProductCard from './ProductCard';
 import './ProductsList.css';
 
-function ProductPage() {
+function ProductList() {
 
   const [products, setProducts] = useState<productItemType[]>();
 
@@ -18,19 +18,22 @@ function ProductPage() {
   }, []);
 
   return (
-    <div className="products-list">
-     {
-      products? 
-      <>
-        {products.map((item:productItemType)=>{
-          return (
-            <ProductCard productItem={item} key={item.id} />
-          )
-        })}
-      </>:null
-     }
+    <div>
+      <h1 className="app-heading">ASP.NET Core</h1>
+      <div className="products-list">
+      {
+        products? 
+        <>
+          {products.map((item:productItemType)=>{
+            return (
+              <ProductCard productItem={item} key={item.id} />
+            )
+          })}
+        </>:null
+      }
+      </div>
     </div>
   )
 }
 
-export default ProductPage
+export default ProductList
