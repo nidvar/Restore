@@ -2,4 +2,55 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* LAYOUT */
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* FONTS */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+/* COLORS */
+
+.light-blue {
+  color: skyblue;
+}
+
+.purple {
+  color: purple;
+}
+
+/* MOUSE */
+
+.cursor-pointer {
+  cursor: pointer;
 }
