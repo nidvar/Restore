@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="app-page">
-     <h1 className="app-heading">ASP.NET Core C#</h1>
+     <h1 className="app-heading">ASP.NET Core</h1>
      <ProductsList />
     </div>
   )

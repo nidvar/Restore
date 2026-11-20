@@ -1,0 +1,10 @@
+:root {
+  /* Colors */
+  --bg-color: #ffffff;
+  --text-color: #1f2937;
+  --brand-color: #2563eb;
+
+  /* Spacing & Layout */
+  --space-md: 16px;
+  --radius: 8px;
+}

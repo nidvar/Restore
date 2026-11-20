@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 60px;
+}
+
+.inner-navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.navbar-icon-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle-theme-container{
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.navbar img {
+    max-height: 30px;
+    max-width: 30px;
+    border-radius: 50%;
+}
+
+@media (min-width: 1080px) {
+}
