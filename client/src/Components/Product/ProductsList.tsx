@@ -24,7 +24,7 @@ function ProductPage() {
       <>
         {products.map((item:productItemType)=>{
           return (
-            <ProductCard props={item} key={item.id} />
+            <ProductCard productItem={item} key={item.id} />
           )
         })}
       </>:null

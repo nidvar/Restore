@@ -1,6 +1,10 @@
 import './Navbar.css';
 
-function Navbar() {
+type toggleThemeType = {
+  toggleTheme: ()=> void;
+}
+
+function Navbar({toggleTheme}: toggleThemeType) {
   return (
     <div className="navbar">
       <div className='inner-navbar'>
@@ -9,7 +13,7 @@ function Navbar() {
           <p>ASP.NET Core</p>
         </div>
         <div className='toggle-theme-container'>
-          <p>Dark/Light</p>
+          <p onClick={toggleTheme}>Dark/Light</p>
         </div>
       </div>
     </div>
