@@ -1,10 +1,14 @@
 import { useState } from 'react';
-import './Navbar.css';
 import { Moon, Sun } from 'lucide-react';
+import { Link } from 'react-router';
+
+import './Navbar.css';
 
 function Navbar() {
-  const [theme, setTheme] = useState<string>('');
-  
+    const [theme, setTheme] = useState<string>(() => {
+      return localStorage.getItem('theme') || 'light';
+    });
+
   const toggle = ()=>{
     const theme = document.documentElement.getAttribute('data-theme');
     const next = theme === 'dark' ? 'light' : 'dark';
@@ -21,11 +25,12 @@ function Navbar() {
     <div className="navbar">
       <div className='inner-navbar'>
         <div className='navbar-icon-container'>
-          <a href="/"><img src='../../../images/c-sharp.png' /></a>
-          <a href="/">ASP.NET Core</a>
+          <Link to="/"><img src='../../../images/c-sharp.png' /></Link>
+          <Link to="/">ASP.NET Core</Link>
         </div>
         <div className='nav-items-container'>
-          <a href="/catalog">Catalog</a>
+          <Link to="/login">LOGIN</Link>
+          <Link to="/catalog">CATALOG</Link>
           <div className='toggle-theme-container' onClick={toggle}>
             {
               theme != "light"?

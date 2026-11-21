@@ -1,5 +1,6 @@
 import './ProductCard.css';
 import type {productItemType} from './Product.type';
+import { Link } from 'react-router';
 
 function App({productItem}: {productItem:productItemType}) {
   return (
@@ -10,7 +11,7 @@ function App({productItem}: {productItem:productItemType}) {
         <p className='purple'>${productItem.price/100}.00</p>
         <div className='add-cart-view'>
           <p>ADD TO CART</p>
-          <a href={"/catalog/" + productItem.id} >VIEW</a>
+          <Link to={"/catalog/" + productItem.id} >VIEW</Link>
         </div>
       </div>
     </div>

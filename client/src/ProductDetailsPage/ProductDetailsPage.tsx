@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import type {productItemType} from "../Components/Product/Product.type"
 import { useParams } from "react-router";
 
+import './ProductDetailsPage.css';
+
 function ProductDetailsPage() {
   const params = useParams();
   const [product, setProduct] = useState<productItemType>();
@@ -18,9 +20,16 @@ function ProductDetailsPage() {
 
   return (
     <div> 
-      <div className="products-list">
-        <p>{product?.name}</p>
-      </div>
+      {
+        product?
+        <div className="product-details-container">
+          <img src={product.pictureUrl} className="product-details-image"/>
+          <h2>{product.name}</h2>
+          <p>{product.brand}</p>
+          <p>{product.price}</p>
+          <p>{product.quantityInStock}</p>
+        </div>: null
+      }
     </div>
   )
 }
