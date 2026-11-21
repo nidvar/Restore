@@ -21,15 +21,18 @@ function Navbar() {
     <div className="navbar">
       <div className='inner-navbar'>
         <div className='navbar-icon-container'>
-          <img src='../../../images/c-sharp.png' />
-          <p>ASP.NET Core</p>
+          <a href="/"><img src='../../../images/c-sharp.png' /></a>
+          <a href="/">ASP.NET Core</a>
         </div>
-        <div className='toggle-theme-container' onClick={toggle}>
-          {
-            theme != "light"?
-            <Sun />:
-            <Moon />
-          }
+        <div className='nav-items-container'>
+          <a href="/catalog">Catalog</a>
+          <div className='toggle-theme-container' onClick={toggle}>
+            {
+              theme != "light"?
+              <Sun />:
+              <Moon />
+            }
+          </div>
         </div>
       </div>
     </div>
