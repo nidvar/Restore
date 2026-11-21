@@ -4,7 +4,6 @@ import ProductCard from './ProductCard';
 import './ProductsList.css';
 
 function ProductList() {
-
   const [products, setProducts] = useState<productItemType[]>();
 
   useEffect(()=>{
@@ -18,8 +17,7 @@ function ProductList() {
   }, []);
 
   return (
-    <div>
-      <h1 className="app-heading">ASP.NET Core</h1>
+    <div> 
       <div className="products-list">
       {
         products? 

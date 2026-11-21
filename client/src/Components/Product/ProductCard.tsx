@@ -10,7 +10,7 @@ function App({productItem}: {productItem:productItemType}) {
         <p className='purple'>${productItem.price/100}.00</p>
         <div className='add-cart-view'>
           <p>ADD TO CART</p>
-          <p>VIEW</p>
+          <a href={"/catalog/" + productItem.id} >VIEW</a>
         </div>
       </div>
     </div>
