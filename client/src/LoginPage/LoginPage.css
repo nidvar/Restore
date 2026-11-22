@@ -1,3 +1,14 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .login-form {
     border: 1px solid black;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }

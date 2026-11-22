@@ -16,10 +16,10 @@ function ProductDetailsPage() {
     .then((res)=>{
       setProduct(res);
     });
-  }, []);
+  }, [params.id]);
 
   return (
-    <div> 
+    <div className="page"> 
       {
         product?
         <div className="product-details-container">

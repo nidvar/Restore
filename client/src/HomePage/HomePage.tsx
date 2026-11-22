@@ -1,6 +1,6 @@
 function HomePage() {
   return (
-    <div>
+    <div className="page">
       <h1 className="app-heading">ASP.NET Core</h1>
     </div>
   )
