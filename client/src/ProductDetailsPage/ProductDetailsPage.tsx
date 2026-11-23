@@ -24,10 +24,26 @@ function ProductDetailsPage() {
         product?
         <div className="product-details-container">
           <img src={product.pictureUrl} className="product-details-image"/>
-          <h2>{product.name}</h2>
-          <p>{product.brand}</p>
-          <p>{product.price}</p>
-          <p>{product.quantityInStock}</p>
+          <div className="product-details-right-side">
+            <h1>{product.name}</h1>
+            <p><strong>${product.price/100}</strong></p>
+            <div className="product-details-table">
+              <div className="product-details-table-fields">
+                <p>Name</p>
+                <p>Description</p>
+                <p>Type</p>
+                <p>Brand</p>
+                <p>Quantity</p>
+              </div>
+              <div className="product-details-table-content">
+                <p>{product.name}</p>
+                <p>{product.description}</p>
+                <p>{product.type}</p>
+                <p>{product.brand}</p>
+                <p>In stock: {product.quantityInStock}</p>
+              </div>
+            </div>
+          </div>
         </div>: null
       }
     </div>
