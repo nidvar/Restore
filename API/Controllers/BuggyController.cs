@@ -15,7 +15,7 @@ namespace API.Controllers
         public IActionResult GetBadRequest()
         {
             System.Console.WriteLine("BAD REQUEST !!!!!!!!!!!!!!");
-            return BadRequest("This is not a good request");
+            return Problem(detail: "This is not a good request", statusCode: 400, title: "Bad Request");
         }
 
         [HttpGet("unauthorized")]

@@ -29,6 +29,14 @@
   text-align: center;
 }
 
+.gap-10 {
+  gap: 10px;
+}
+
+.mw-400 {
+  min-width: 400px;
+}
+
 /* FONTS */
 
 .uppercase {
@@ -41,6 +49,10 @@
 
 .font-sm {
   font-size: 14px;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 /* COLORS */

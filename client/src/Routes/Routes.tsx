@@ -5,6 +5,8 @@ import CatalogPage from "../CatalogPage/CatalogPage";
 import ProductDetailsPage from "../ProductDetailsPage/ProductDetailsPage";
 import LoginPage from "../LoginPage/LoginPage";
 import Register from "../RegisterPage/RegisterPage";
+import ErrorTestPage from "../ErrorTestPage/ErrorTestPage";
+import ErrorPage from "../ErrorPages/ErrorPage";
 
 export const router = createBrowserRouter([
     {
@@ -16,6 +18,8 @@ export const router = createBrowserRouter([
             {path: '/catalog/:id', element: <ProductDetailsPage />},
             {path: '/login', element: <LoginPage />},
             {path: '/register', element: <Register />},
+            {path: '/errortest', element: <ErrorTestPage />},
+            {path: '/error/:id', element: <ErrorPage />},
         ]
     }
 ])

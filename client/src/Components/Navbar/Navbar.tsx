@@ -31,6 +31,7 @@ function Navbar() {
         <div className='nav-items-container'>
           <Link to="/login">LOGIN</Link>
           <Link to="/catalog">CATALOG</Link>
+          <Link to='/errortest'>ERROR TEST</Link>
           <div className='toggle-theme-container' onClick={toggle}>
             {
               theme != "light"?
