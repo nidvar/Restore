@@ -5,7 +5,7 @@ import CatalogPage from "../CatalogPage/CatalogPage";
 import ProductDetailsPage from "../ProductDetailsPage/ProductDetailsPage";
 import LoginPage from "../LoginPage/LoginPage";
 import Register from "../RegisterPage/RegisterPage";
-import ErrorTestPage from "../ErrorTestPage/ErrorTestPage";
+import ErrorTestPage from "../ErrorPages/ErrorTestPage";
 import ErrorPage from "../ErrorPages/ErrorPage";
 
 export const router = createBrowserRouter([

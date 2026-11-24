@@ -1,12 +1,3 @@
-.homepage-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    max-width: 600px;
-    margin: auto;
-}
-
-.homepage-container p {
-    font-size: 18px;
+.home-page-container {
+    gap: 20px;
 }

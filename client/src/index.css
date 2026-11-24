@@ -9,6 +9,9 @@
 
 .page {
   padding: 16px;
+  background-color: whitesmoke;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .flex {
@@ -35,6 +38,15 @@
 
 .mw-400 {
   min-width: 400px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 1200px;
+  background-color: white;
 }
 
 /* FONTS */

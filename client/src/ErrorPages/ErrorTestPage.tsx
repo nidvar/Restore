@@ -1,9 +1,11 @@
 import { Link } from 'react-router';
 
+import './ErrorPages.css';
+
 function ErrorTestPage() {
   return (
     <div className="page">
-      <div className="errorpage-container">
+      <div className="page-container error-test-page-container">
         <h2 className="errorpage-heading">Error testing page</h2>
         <Link to="/error/bad-request">Bad Request</Link>
         <Link to="/error/unauthorized">Unauthorized</Link>

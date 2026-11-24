@@ -29,7 +29,7 @@ function BadRequestPage() {
 
   return (
     <div className="page">
-      <div className="homepage-container">
+      <div className="page-container">
         {
           error ?
             <div>
