@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import './RegisterPage.css';
 
 function RegisterPage() {
@@ -7,9 +8,17 @@ function RegisterPage() {
       <div className='page-container'>
         <h1>Register</h1>
         <form className='register-form'>
-          <input type='text' />
+          <label>Email</label>
+          <input type='email' />
+          <label>Password</label>
+          <input type='password' />
+          <label>Confirm Password</label>
+          <input type='password' />
+          <div>
+            <button>Register</button>
+          </div>
         </form>
-        <button>Register</button>
+        Already have an account? <Link to='/login'>Login</Link>
       </div>
     </div>
   )
