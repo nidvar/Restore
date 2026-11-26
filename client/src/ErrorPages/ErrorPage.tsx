@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 
 type errorType = {
   detail: string;
@@ -48,6 +48,8 @@ function BadRequestPage() {
               </div>
             </div> : null
         }
+        <br />
+        <Link to='/' className='button'>HOME</Link>
       </div>
     </div>
   )
