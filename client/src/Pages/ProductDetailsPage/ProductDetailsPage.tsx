@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type {productItemType} from "../Components/Product/Product.type"
+import type {productItemType} from "../../Components/Product/Product.type"
 import { useParams } from "react-router";
 
 import './ProductDetailsPage.css';
@@ -9,13 +9,12 @@ function ProductDetailsPage() {
   const [product, setProduct] = useState<productItemType>();
 
   useEffect(()=>{
-    fetch("https://localhost:5001/api/products/" + params.id)
-    .then((res)=>{
-      return res.json();
-    })
-    .then((res)=>{
-      setProduct(res);
-    });
+    const fetchProduct = async ()=>{
+      const response = await fetch("https://localhost:5001/api/products/" + params.id)
+      const data = await response.json();
+      setProduct(data);
+    }
+    fetchProduct();
   }, [params.id]);
 
   return (

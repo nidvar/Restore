@@ -1,8 +1,13 @@
 import './Button.css';
 
-function Button({buttonText}: {buttonText: string}) {
+type ButtonType = {
+  buttonText: string;
+  fn: ()=> void;
+}
+
+function Button({buttonText, fn}: ButtonType) {
   return (
-    <button className='button'>{buttonText}</button>
+    <button className='button' onClick={fn}>{buttonText}</button>
   )
 }
 
